@@ -4,13 +4,24 @@ import "./styles.css";
 const emojiDictionary = {
   "🙂": "Slightly Happy",
   "😉": "Winking Face",
-  "🥲": "Smiling with tear",
+  "🥰": "Smiling with hearts",
   "🤪": "Zany Face",
   "🤭": "Face with hand over mouth",
   "😎": "Smiling Face with Sunglasses",
   "🤓": "Nerd Face",
   "🤘": "Rock on",
-  "🤙": "Homie Sign"
+  "🤙": "Homie Sign",
+  "💕": "Two hearts",
+  "🧆": "Falafel",
+  "🧁": "Fairy Cake",
+  "💆‍♂️": "Man getting a head message",
+  "💫": "Dizzy",
+  "🌀": "Cyclone",
+  "🧙": "Wizard",
+  "🦖": "T-Rex",
+  "⚗️": "Alembic",
+  "🍻": "Cheers",
+  "💢": "Anger Sign (Vein Pop)"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -38,7 +49,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Emoji Interpreter</h1>
+      <h1>
+        <span style={{ color: "#5A0056" }}> Emoji</span> Interpreter
+      </h1>
       <input onChange={emojiInputHandler} />
 
       <h2>{meaning}</h2>
@@ -50,7 +63,7 @@ export default function App() {
               () => emojiClickHamdler(emoji)
               //Imp got stucked while click fixed later
             }
-            style={{ fontSize: "3rem", padding: "1rem", cursor: "pointer" }}
+            style={{ fontSize: "5rem", padding: "1rem", cursor: "pointer" }}
             key={emoji}
           >
             {" "}
