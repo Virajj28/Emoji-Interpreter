@@ -21,7 +21,10 @@ const emojiDictionary = {
   "🦖": "T-Rex",
   "⚗️": "Alembic",
   "🍻": "Cheers",
-  "💢": "Anger Sign (Vein Pop)"
+  "💢": "Anger Sign (Vein Pop)",
+  "🍟": " French Fries",
+  "🍊": " Tangerine",
+  "🧢": "Billed Cap"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
